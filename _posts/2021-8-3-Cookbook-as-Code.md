@@ -71,14 +71,14 @@ Roughly it has the following elements:
 ## Preamble
 In here we define which packages we're using for the document as well as some settings. For example can you find here that we're relying on xcookybooky:  
 
-    ```
+```
     \usepackage[
         handwritten,
         nowarnings,
         %myconfig
     ]
     {xcookybooky}
-    ```
+```
 
 ## Titlepage
 After the `\\begin{document}` element we define the title and the author and create a title page, followed by a auto-generated table of contents (`\\tableofcontents`).
@@ -150,10 +150,10 @@ As we've got the ingredients covered, let's state what we have to do with them. 
 
 ```
     \preparation
-	{
-		\step Put ice in Glass
-		\step Pour Amaretto over ice cubes
-		\step Fill up with Ginger Ale
+    {
+        \step Put ice in Glass
+        \step Pour Amaretto over ice cubes
+        \step Fill up with Ginger Ale
         \step Stir
     }
 ```
@@ -163,7 +163,7 @@ Lastly you can chose to add some hint, for example for some alternative ways of 
 
 ```
     \hint
-	{
+    {
         If available, serve with a slice of lemon.
     }
 ```
