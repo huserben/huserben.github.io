@@ -37,11 +37,11 @@ The package we're using for creating the cookbook is using a font that doesn't s
 3. Install the font the following way:  
   3.1 Open a command line in the font map directory (e.g. *D:/texlive/texmf-local/fonts/maps/dvips*)  
   3.2 Run the following:  
-  ```
+`
     mktexlsr
     updmap-sys --force --enable Map=emerald.map
     mktexlsr
-  ```
+`
 
 Ok now you should be good to go.
 
@@ -70,14 +70,14 @@ Roughly it has the following elements:
 
 ## Preamble
 In here we define which packages we're using for the document as well as some settings. For example can you find here that we're relying on xcookybooky:
-```
+    ```
     \usepackage[
         handwritten,
         nowarnings,
         %myconfig
     ]
     {xcookybooky}
-```
+    ```
 
 ## Titlepage
 After the `\\begin{document}` element we define the title and the author and create a title page, followed by a auto-generated table of contents (`\\tableofcontents`).
