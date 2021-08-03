@@ -37,11 +37,11 @@ The package we're using for creating the cookbook is using a font that doesn't s
 3. Install the font the following way:  
   3.1 Open a command line in the font map directory (e.g. *D:/texlive/texmf-local/fonts/maps/dvips*)  
   3.2 Run the following:  
-`
+    ```
     mktexlsr
     updmap-sys --force --enable Map=emerald.map
     mktexlsr
-`
+    ```
 
 Ok now you should be good to go.
 
@@ -69,7 +69,8 @@ Roughly it has the following elements:
 - Recipes
 
 ## Preamble
-In here we define which packages we're using for the document as well as some settings. For example can you find here that we're relying on xcookybooky:
+In here we define which packages we're using for the document as well as some settings. For example can you find here that we're relying on xcookybooky:  
+
     ```
     \usepackage[
         handwritten,
@@ -93,12 +94,13 @@ Let's check this out in more detail with a real example.
 ### Adding a new Recipe
 When we want to add a new recipe, we go the place in the document where we want to add it. Then we want to add a new line to start the recipe on a fresh page and add begin a new recipe section:  
 
-    ```
-    \newpage
-    \begin{recipe}
-        {My New Recipe}
-    \end{recipe}
-    ```
+```
+\newpage
+\begin{recipe}
+    {My New Recipe}
+\end{recipe}
+```
+
 *My New Recipe* will be the title of the recipe. *Build and View* and you should see the new page appear.  
 
 #### Switching the Language
@@ -107,7 +109,7 @@ If you're using my repo as a base you might have noticed that some text is shown
 ### Add Overview
 Ok let's add some highlevel overview to the recipe. For this you need to add the following **right after** the begin block:  
 
-    ```
+```
     [
         preparationtime = {\unit[10]{min}},
         bakingtime={\unit[30]{min}},
@@ -116,36 +118,37 @@ Ok let's add some highlevel overview to the recipe. For this you need to add the
         calory,
         source = https://github.com/huserben/cookbook
     ]
-    ```
+```
 
 After a new build you should see the information appear below the title. However something essential is still missing: a cool preview of how our food will look like. Let's change this by adding the following after title:  
-    ```
-        \graph
-        {
-            small=pictures/amaretto_ginger_ale/amaretto_ginger_ale.png
-        }
-    ```
+
+```
+    \graph
+    {
+        small=pictures/amaretto_ginger_ale/amaretto_ginger_ale.png
+    }
+```
 
 After a build you should see the image appear. You can also change between *big* and *small* when including a picture.
 
 ### Add Ingredients
-Next we need to specify our ingredients, you can do this by beginning an *ingredients* block after the *graph*:
+Next we need to specify our ingredients, you can do this by beginning an *ingredients* block after the *graph*:  
 
-    ```
+```
     \ingredients
     {
         4 cl & Amaretto \\
         2 dl & Ginger Ale \\
         & Ice Cubes
     }
-    ```
+```
 
 End all ingredients with a "\\\\" to indicate a new line. In every line you can use a & to distinguish between the amount and the actual ingredient. This will then be formatted properly.
 
 ### Add Preparation Steps
-As we've got the ingredients covered, let's state what we have to do with them. For this we begin a *preparations* block that will contain several *steps*:
+As we've got the ingredients covered, let's state what we have to do with them. For this we begin a *preparations* block that will contain several *steps*:  
 
-    ```
+```
     \preparation
 	{
 		\step Put ice in Glass
@@ -153,22 +156,23 @@ As we've got the ingredients covered, let's state what we have to do with them. 
 		\step Fill up with Ginger Ale
         \step Stir
     }
-    ```
+```
 
 ### Add Hint
-Lastly you can chose to add some hint, for example for some alternative ways of preparing. Add a *hint* block and write whatever you want to convey:
+Lastly you can chose to add some hint, for example for some alternative ways of preparing. Add a *hint* block and write whatever you want to convey:  
 
-    ```
+```
     \hint
 	{
         If available, serve with a slice of lemon.
     }
-    ```
+```
 
 After a last build and view the document should now look like this:
 ![Added recipe]({{ site.baseurl }}/images/posts/cookbook_as_code/added_recipe.png)
 
 And the following is the full example of the recipe:  
+
 ```
 \newpage
 \begin{recipe}
@@ -219,7 +223,8 @@ We can define Github Actions Workflows by creating a yaml file in a *workflows* 
 You can find the finished workflow in the cookbook repo under [.github/workflows/create_cookbook.yml](https://github.com/huserben/cookbook/blob/main/.github/workflows/create_cookbook.yml).
 
 ### Workflow Basics
-The first few lines of the workflow define that we want to run the workflow everytime we pushed something to the main branch. 
+The first few lines of the workflow define that we want to run the workflow everytime we pushed something to the main branch.  
+
 ```
 on:
   push:
@@ -227,7 +232,7 @@ on:
       - main
 ```
 
-Then we define a job that uses a ubuntu machine to run the workflow on and as a first step it will checkout the repo:
+Then we define a job that uses a ubuntu machine to run the workflow on and as a first step it will checkout the repo:  
 
 ```
 jobs:
@@ -259,7 +264,7 @@ We must be able to execute custom commands as we need to install the emerald fon
 ```
 
 ### Publish PDF
-Now that we have our pdf, we want to make it available to the world. For this we first copy the pdf to the *deploy* folder and then use an [action to deploy a folder to a *gh-pages* branch](https://github.com/peaceiris/actions-gh-pages). We will use this *gh-pages* branch in the next step.
+Now that we have our pdf, we want to make it available to the world. For this we first copy the pdf to the *deploy* folder and then use an [action to deploy a folder to a *gh-pages* branch](https://github.com/peaceiris/actions-gh-pages). We will use this *gh-pages* branch in the next step.  
 
 ```
       - name: Copy Cookbook
@@ -282,9 +287,10 @@ To complete the deployment, we want to make the cookbook reachable from the inte
 
 However the pdf will not be available under *https://username.github.io/repo* just yet. You would need to browse to */MyCookbook.pdf*. We can make this available directly under the url by adding a little bit of html.  
 
-In the git repository add a *deploy* folder and add a *index.html* with following content:
+In the git repository add a *deploy* folder and add a *index.html* with following content:  
+
 ```
-    <embed src="./MyCookbook.pdf" type="application/pdf" width=100% height=100% />
+<embed src="./MyCookbook.pdf" type="application/pdf" width=100% height=100% />
 ```
 
 Now you can browse to your github pages url and it will display the pdf in your browser. Everytime you modify your cookbook and push, within a few minutes the cookbook will be updated magically. If that's not cool, what is?
