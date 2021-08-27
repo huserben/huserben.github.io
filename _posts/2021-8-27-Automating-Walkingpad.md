@@ -14,7 +14,7 @@ In the spirit of my [recent automation experience](https://huserben.github.io/id
 The code to control/access the WalkingPad is stored on [github](https://github.com/huserben/walkingpad) - Feel free to clone/fork/adjust to your needs.
 
 # Goal
-The end goal was that I could press one button on my desktop pc and it would fetch the data from the WalkingPad so that it is visualized on a Grafana dashboard. Because the WalkingPad connnects via Bluetooth and my Desktop PC does not have bluetooth, I wanted a REST API on a Raspberry Pi that is then communicating with the WalkingPad.
+The end goal was that I could press one button on my desktop pc and it would fetch the data from the WalkingPad so that it is visualized on a Grafana dashboard. Because the WalkingPad connects via Bluetooth and my Desktop PC does not have Bluetooth, I wanted a REST API on a Raspberry Pi that is then communicating with the WalkingPad.
 
 # Accessing the WalkingPad
 First of all was the question how to communicate with the treadmill when not using the App. Luckily there are people smarter than me in the world that provide their code to the world. A quick [search on github](https://github.com/search?q=walkingpad) showed that there are some existing libraries. [ph4-walkingpad](https://github.com/ph4r05/ph4-walkingpad) from [Dušan Klinec](https://github.com/ph4r05) looked especially promising: It has a nice documentation and is written in python. Exactly what we need!
@@ -23,7 +23,7 @@ After a quick test locally I verified that indeed I can use this library to acce
 So let's write a REST API based on this library.
 
 # Connecting to the WalkingPad
-In order to do anything, you must connect to the WalkingPad. In order to connect to the WalkingPad you need to know the MacAddress of it. To figure this out just run the [scan.py script](https://github.com/huserben/walkingpad/blob/main/scan.py). This will scan for nearby devices. You should see a device named "WalkingPad":
+In order to do anything, you must connect to the WalkingPad. In order to connect to the WalkingPad you need to know the MAC Address of it. To figure this out just run the [scan.py script](https://github.com/huserben/walkingpad/blob/main/scan.py). This will scan for nearby devices. You should see a device named "WalkingPad":
 
 ![Scan]({{ site.baseurl }}/images/posts/walkingpad_automation/scan.jpg)
 
@@ -112,9 +112,9 @@ Note how we read the address during the connection from the yaml file in the *lo
 Next up: Getting the data from my last walk.
 
 # Getting Data
-Controlloing the mode is mildly impressive, but if we could get the data from my last walk that would be a step in the right direction. A bit of poking in the docs and code from the [ph4_walkingpad library](https://github.com/ph4r05/ph4-walkingpad) I found a way that works.  
+Controlling the mode is mildly impressive, but if we could get the data from my last walk that would be a step in the right direction. A bit of poking in the docs and code from the [ph4_walkingpad library](https://github.com/ph4r05/ph4-walkingpad) I found a way that works.  
 
-We can register an event handler to get the lastest record stored on the walking whenever we ask the controller for the history. This we can keep as dictionary and return to the caller when we ask for the history.
+We can register an event handler to get the latest record stored on the walking whenever we ask the controller for the history. This we can keep as dictionary and return to the caller when we ask for the history.
 
 That results in following code additions:
 
