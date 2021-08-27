@@ -272,6 +272,9 @@ Where day > CURRENT_DATE - 30
   AND day <= CURRENT_DATE
 ```
 
+Add whatever data you care about and create your own dashboard:
+![Grafana Dashboard]({{ site.baseurl }}/images/posts/walkingpad_automation/grafana.png)
+
 # Conclusion
 With everything put together, I have a flexible visualization of my walking data without having to depend on an unstable app. My data is stored in a database that is in the cloud and I can simply click one button to put my WalkingPad into Standby mode and collect the latest data. Goal achieved.
 
