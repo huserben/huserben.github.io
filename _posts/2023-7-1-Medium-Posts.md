@@ -7,6 +7,7 @@ comments: false
 
 Following is a list of posts that are published on Medium. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
 
+- [Make It Visible! - The Effect of Transparency](https://medium.com/@benjihuser/a4c0b5c9e4e0?source=friends_link&sk=a64423eb2ef91dc6229744316b11e00b)  
 - [Using Flow Metrics in Your Sprint Events](https://medium.com/serious-scrum/using-flow-metrics-in-your-sprint-events-a19450c574d8?source=friends_link&sk=5f6da1ca084a6565b7b1bd200b60b227)
 - [Using Monte Carlo Forecasts in your Scrum Events](https://medium.com/serious-scrum/using-monte-carlo-forecasts-in-your-scrum-events-45ac3d37c2fd?source=friends_link&sk=c16202a069e2bda361fa0f6cab884f68)
 - [You don’t need a Retrospective to Inspect and Adapt your Effectiveness](https://medium.com/serious-scrum/you-dont-need-a-retrospective-to-inspect-and-adapt-your-effectiveness-70dd67bb7dc0?source=friends_link&sk=eb099786ff80e8cdf8104e6424593cf7)
