@@ -7,6 +7,7 @@ comments: false
 
 Following is a list of posts that are published on Medium. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
 
+- [Adding Notifications to MS Teams when Azure DevOps Work Items are Waiting using Power Automate](https://medium.com/@benjihuser/adding-notifications-to-ms-teams-when-azure-devops-work-items-are-waiting-using-power-automate-b5466eb1cae6?source=friends_link&sk=3f44dbb3614fd670e80fa7a19e77dedf)
 - [Are you Waiting for Work or is Work Waiting for You?](https://medium.com/@benjihuser/are-you-waiting-for-work-or-is-work-waiting-for-you-87bacbeb2411?source=friends_link&sk=812e766ff92b41d92ac928b94d97dc24)  
 - [Make It Visible! - The Effect of Transparency](https://medium.com/@benjihuser/a4c0b5c9e4e0?source=friends_link&sk=a64423eb2ef91dc6229744316b11e00b)  
 - [Using Probabilistic Forecasts for Feature Planning](https://medium.com/@benjihuser/using-probabilistic-forecasts-for-feature-planning-824f0561ef91?source=friends_link&sk=109b36b81701bdfd41fee3d001c565bb)  
