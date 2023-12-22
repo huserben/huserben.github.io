@@ -7,6 +7,7 @@ comments: false
 
 Following is a list of posts that are published on Medium. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
 
+- [Monte Carlo Simulations, Accuracy, and Unplanned Work — A Case Study](https://medium.com/@benjihuser/monte-carlo-simulations-accuracy-and-unplanned-work-a-case-study-9dab4d36bd02?source=friends_link&sk=13fb9b09fb1cacf22eb4f14386943f7b)
 - [Adding Notifications to MS Teams when Azure DevOps Work Items are Waiting using Power Automate](https://medium.com/@benjihuser/adding-notifications-to-ms-teams-when-azure-devops-work-items-are-waiting-using-power-automate-b5466eb1cae6?source=friends_link&sk=3f44dbb3614fd670e80fa7a19e77dedf)
 - [Are you Waiting for Work or is Work Waiting for You?](https://medium.com/@benjihuser/are-you-waiting-for-work-or-is-work-waiting-for-you-87bacbeb2411?source=friends_link&sk=812e766ff92b41d92ac928b94d97dc24)  
 - [Make It Visible! - The Effect of Transparency](https://medium.com/@benjihuser/a4c0b5c9e4e0?source=friends_link&sk=a64423eb2ef91dc6229744316b11e00b)  
