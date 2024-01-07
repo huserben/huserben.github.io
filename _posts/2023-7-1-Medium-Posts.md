@@ -7,6 +7,7 @@ comments: false
 
 Following is a list of posts that are published on Medium. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
 
+- [An Introduction and Step-by-Step Guide to Monte Carlo Simulations](https://medium.com/@benjihuser/an-introduction-and-step-by-step-guide-to-monte-carlo-simulations-4706f675a02f?source=friends_link&sk=5e329d6d9725bbcbf03aad2e970cfae7)
 - [The Flaw of Averages — Comparing Monte Carlo Simulations with Estimates based on Averages](https://medium.com/mastering-agility/the-flaw-of-averages-comparing-monte-carlo-simulations-with-estimates-based-on-averages-267528ae4f47?source=friends_link&sk=a79021d95c7546b9f271c2b660202452)
 - [Monte Carlo Simulations, Accuracy, and Unplanned Work — A Case Study](https://medium.com/@benjihuser/monte-carlo-simulations-accuracy-and-unplanned-work-a-case-study-9dab4d36bd02?source=friends_link&sk=13fb9b09fb1cacf22eb4f14386943f7b)
 - [Adding Notifications to MS Teams when Azure DevOps Work Items are Waiting using Power Automate](https://medium.com/@benjihuser/adding-notifications-to-ms-teams-when-azure-devops-work-items-are-waiting-using-power-automate-b5466eb1cae6?source=friends_link&sk=3f44dbb3614fd670e80fa7a19e77dedf)
