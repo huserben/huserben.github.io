@@ -7,6 +7,7 @@ comments: false
 
 Following is a list of posts that are published on Medium. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
 
+- [Limit Work in Progress without Work In Progress Limits - Exploring Alternatives using Total Work Item Age](https://medium.com/@benjihuser/limit-work-in-progress-without-work-in-progress-limits-08325db60a0b?source=friends_link&sk=6bb361aa3b3bc80fd9078bf3c32b532c)
 - [Adding Notifications to MS Teams when a SonarCloud Quality Gate Changes the Status](https://medium.com/@benjihuser/adding-notifications-to-ms-teams-when-a-sonarcloud-quality-gate-changes-the-status-d27c99efe5f5?source=friends_link&sk=c994bbea1a95ec6229c3094b7d76fd0c)
 - [Finding the Flow in Breaking Down Work](https://medium.com/@benjihuser/finding-the-flow-in-breaking-down-work-03dc311c8bc3?source=friends_link&sk=76e38e55f61a29e3f71d26a9be0beff3)
 - [An Introduction and Step-by-Step Guide to Monte Carlo Simulations](https://medium.com/@benjihuser/an-introduction-and-step-by-step-guide-to-monte-carlo-simulations-4706f675a02f?source=friends_link&sk=5e329d6d9725bbcbf03aad2e970cfae7)
