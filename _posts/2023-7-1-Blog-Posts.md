@@ -1,12 +1,16 @@
 ---
 layout: post
-title: Medium Posts
-tags: Medium Posts
+title: Blog Posts
+tags: Blog Posts
 comments: false
 ---
 
-Following is a list of posts that are published on Medium. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
+Following is a list of posts that are published online. The links guarantee anyone free access to the stories, even if you read all of your complimentary stories for this month. Enjoy reading!
 
+- [Why you should compare metrics of different Teams with each other](https://www.letpeople.work/post/why-you-should-compare-metrics-of-different-teams-with-each-other)
+- [What does a Fridge have to do with Flow? - An Analogy to Explain Flow Metrics](https://www.letpeople.work/post/what-does-a-fridge-have-to-do-with-flow-an-analogy-to-explain-flow-metrics)
+- [Using Flow Metrics - From "Feelings" to "Facts"](https://www.letpeople.work/post/using-flow-metrics-from-feelings-to-facts)
+- [Kanban Mythbusters](https://www.letpeople.work/post/kanban-mythbusters)
 - [Limit Work in Progress without Work In Progress Limits - A Case Study of using Total Work Item Age as WIP Control Mechanism](https://medium.com/@benjihuser/limit-work-in-progress-without-work-in-progress-limits-33ee889f661d?source=friends_link&sk=3a7c8864c9581af4838121acf5b48e76)
 - [Limit Work in Progress without Work In Progress Limits - Exploring Alternatives using Total Work Item Age](https://medium.com/@benjihuser/limit-work-in-progress-without-work-in-progress-limits-08325db60a0b?source=friends_link&sk=6bb361aa3b3bc80fd9078bf3c32b532c)
 - [Adding Notifications to MS Teams when a SonarCloud Quality Gate Changes the Status](https://medium.com/@benjihuser/adding-notifications-to-ms-teams-when-a-sonarcloud-quality-gate-changes-the-status-d27c99efe5f5?source=friends_link&sk=c994bbea1a95ec6229c3094b7d76fd0c)
